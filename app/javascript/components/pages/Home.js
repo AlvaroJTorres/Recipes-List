@@ -16,7 +16,7 @@ export default function Home() {
       <div>
         {recipes &&
           recipes.map((recipe) => (
-            <Link key={recipe.id} to={`recipe/${recipe.id}`}>
+            <Link key={recipe.id} to={`recipes/${recipe.id}`}>
               {recipe.title}
             </Link>
           ))}

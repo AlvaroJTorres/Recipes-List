@@ -14,12 +14,12 @@ export default function useSearchRecipes() {
     const searchRecipes = async () => {
       setError(null);
       setLoading(true);
-      const recipesImagesData = await getRecipes(query);
+      const recipesData = await getRecipes(query);
       setLoading(false);
-      if (recipesImagesData.status === "error") {
-        setError(recipesImagesData.message);
+      if (recipesData.status === "error") {
+        setError(recipesData.message);
       } else {
-        setRecipes(recipesImagesData.data.recipes);
+        setRecipes(recipesData.data.recipes);
       }
     };
 
