@@ -7,4 +7,9 @@ class RecipesController < ApplicationController
     @response = HTTParty.get(ENV['BASE_URL'] + "/recipes?search=#{params[:search]}&key=#{ENV['KEY']}")
     render json: @response.parsed_response
   end
+
+  def show
+    @response = HTTParty.get(ENV['BASE_URL'] + "/recipes/#{params[:id]}?key=#{ENV['KEY']}")
+    render json: @response.parsed_response
+  end
 end
