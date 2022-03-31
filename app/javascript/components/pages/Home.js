@@ -5,35 +5,36 @@ import Search from "../Search";
 
 export default function Home() {
   const [query, setQuery, recipes, loading, error] = useSearchRecipes();
-  recipes && console.log(recipes);
+
   return (
-    <div className="bg-orange-200">
-      <div className="p-4 flex justify-between items-center">
+    <div className="flex flex-col justify-items-center items-center">
+      <h1 className="text-4xl p-4">RECIPES LIST</h1>
+      <div className="flex gap-4 p-3">
         <Search
           query={query}
           setQuery={setQuery}
           loading={loading}
           error={error}
         />
-        <button className="px-1 border-black rounded-lg bg-yellow-600 hover:bg-yellow-400">
+        <button className="rounded-lg bg-orange-400 text-lg p-2 text-black hover:opacity-75">
           <Link to="new-recipe">NEW RECIPE</Link>
         </button>
       </div>
-      <div className="grid grid-cols-1 auto-rows-auto gap-2 lg:grid-cols-6 sm:grid-cols-4">
+      <div className="grid grid-cols-1 p-4 justify-items-center items-center gap-4 md:grid-cols-3 xl:grid-cols-4">
         {recipes &&
           recipes.map((recipe) => (
             <Link
               key={recipe.id}
               to={`${recipe.id}`}
-              className="max-w-sm rounded-lg overflow-hidden shadow-lg flex flex-col gap-1 justify-between hover:opacity-75"
+              className="flex flex-col rounded-lg shadow-lg justify-items-center items-center p-2 hover:opacity-75"
             >
               <img
+                className="w-60 h-32 object-cover"
                 src={recipe.image_url}
                 alt={recipe.title}
-                className="p-2 w-64 h-40 object-cover"
               />
-              <div className="flex flex-col gap-2 justify-between leading-tight p-3 md:p-2">
-                <h3 className="text-lg">{recipe.title}</h3>
+              <div>
+                <h3 className="text-black text-base">{recipe.title}</h3>
                 <p className="text-sm">{recipe.publisher}</p>
               </div>
             </Link>
