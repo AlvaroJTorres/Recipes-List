@@ -20,7 +20,7 @@ export default function Home() {
           <Link to="new-recipe">NEW RECIPE</Link>
         </button>
       </div>
-      <div className="grid grid-cols-1 p-4 justify-items-center items-center gap-4 md:grid-cols-3 xl:grid-cols-4">
+      <div className="grid grid-cols-1 p-4 gap-4 md:grid-cols-3 xl:grid-cols-4">
         {recipes &&
           recipes.map((recipe) => (
             <Link
