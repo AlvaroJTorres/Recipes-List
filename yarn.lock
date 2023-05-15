@@ -1179,6 +1179,7 @@
     webpack-sources "^1.4.3"
 
 "@tailwindcss/postcss7-compat@^2.2.17", "tailwindcss@npm:@tailwindcss/postcss7-compat@^2.2.17":
+  name tailwindcss
   version "2.2.17"
   resolved "https://registry.yarnpkg.com/@tailwindcss/postcss7-compat/-/postcss7-compat-2.2.17.tgz#dc78f3880a2af84163150ff426a39e42b9ae8922"
   integrity sha512-3h2svqQAqYHxRZ1KjsJjZOVTQ04m29LjfrLjXyZZEJuvUuJN+BCIF9GI8vhE1s0plS0mogd6E6YLg6mu4Wv/Vw==
@@ -2057,9 +2058,9 @@ caniuse-api@^3.0.0:
     lodash.uniq "^4.5.0"
 
 caniuse-lite@^1.0.0, caniuse-lite@^1.0.30000981, caniuse-lite@^1.0.30001109, caniuse-lite@^1.0.30001317:
-  version "1.0.30001327"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001327.tgz#c1546d7d7bb66506f0ccdad6a7d07fc6d668c858"
-  integrity sha512-1/Cg4jlD9qjZzhbzkzEaAC2JHsP0WrOc8Rd/3a3LuajGzGWR/hD7TVyvq99VqmTy99eVh8Zkmdq213OgvgXx7w==
+  version "1.0.30001487"
+  resolved "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001487.tgz"
+  integrity sha512-83564Z3yWGqXsh2vaH/mhXfEM0wX+NlBCm1jYHOb97TrTWJEmPTccZgeLTPBUUb0PNVo+oomb7wkimZBIERClA==
 
 case-sensitive-paths-webpack-plugin@^2.4.0:
   version "2.4.0"
